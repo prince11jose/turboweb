@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TurboCPP</title>
+  <script src="js-dos.js"></script>
+  <style>
+    canvas {
+        position:fixed;
+        left:0;
+        top:0;
+        width:100% !important;
+        height:100% !important;
+        background-color:black;
+      }
+  </style>
+</head>
+
+<body>
+  <canvas id="jsdos"></canvas>
+  <script>
+    Dos(document.getElementById("jsdos")).ready((fs, main) => {
+      fs.extract("tc.zip").then(() => {
+        main(["-c", "TC\\BIN\\TC.EXE"])
+      });
+    });
+  </script>
+</body>
+
+</html>
