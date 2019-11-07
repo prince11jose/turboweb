@@ -1,2 +1,2 @@
-# Webapp
- Web Applications
+#Webapp
+Local applications on the browser
